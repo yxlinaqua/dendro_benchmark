@@ -12,8 +12,7 @@ a[3] = a[4] = a[5] = a[11] = a[12] = a[13] = b[5] = b[6] = b[7] = b[13] = -1;
 
 plist = NULL;
 plist = PyList_New (0);
-/*if (!plist) En ymmärrä mihin tätä tarvii
-    return NULL;*/
+
 
 every = 1;
 n = firstx = firsty = secx = x = 0;
@@ -47,7 +46,7 @@ for (y = 1; y < height-1; y++) {
 
 
 /* covers the mask having zero pixels or only the final pixel
-Pikseleitä on ainakin kymmenen
+
 if ((x == width-1) && (y == height-1)) {
     return plist;
 }        */
@@ -69,7 +68,6 @@ for (n = 0;n < 8;n++) {
 }       
 
 /* if there are no neighbors, return
-Pikseleitä on ainakin kymmenen
 if (!secx) {
     return plist;
 }*/
